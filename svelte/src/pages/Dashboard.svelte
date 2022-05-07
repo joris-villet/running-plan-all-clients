@@ -15,6 +15,8 @@
 </div>
 
 <style>
+  @import '../assets/scss/Dashboard/index.css';
+
   .container {
     display: grid;
     height: 100vh;
@@ -24,7 +26,7 @@
     /* grid-template-columns: 500px 1fr;  */
   }
 
-  aside {
+  /* aside {
     position: relative;
     background: rgba(255, 255, 255, 0.3);
     border-top-right-radius: 20px;
@@ -32,7 +34,7 @@
     -moz-backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
     backdrop-filter: blur(30px);
-  }
+  } */
   
   section {
     /* background: rgba(205, 134, 63, 0.442); */

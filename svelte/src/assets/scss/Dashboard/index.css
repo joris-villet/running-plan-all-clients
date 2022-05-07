@@ -1,0 +1,9 @@
+aside {
+  position: relative;
+  background: rgba(255, 255, 255, 0.3);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+}
+/*# sourceMappingURL=index.css.map */
