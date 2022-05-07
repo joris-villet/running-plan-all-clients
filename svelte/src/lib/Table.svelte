@@ -1,4 +1,5 @@
 <script>
+  import Events from '../lib/Events.svelte'
 </script>
 
 <table class="table">
@@ -12,7 +13,7 @@
   </thead>
 
   <tbody class="table__tbody">
-    <!-- <tr class="table__row" v-for="event in eventStore.events" :key="event.id">
+     <!-- <tr class="table__row" v-for="event in eventStore.events" :key="event.id">
       <Events
         classTd="table__tbody__td"
         :date="event.date"
@@ -22,7 +23,10 @@
       >
         <i @click="openModal(event)" class="table__tbody__icon fas fa-edit"></i>
       </Events>
-    </tr> -->
+    </tr>  -->
+    <tr class="table__row">
+      <Events />
+    </tr> 
 
     <!-- MODAL EDIT EVENT-->
   </tbody>

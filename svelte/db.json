@@ -1,0 +1,60 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "date": "22/05/2022",
+      "time": "1h",
+      "trainingType": "récup",
+      "weight": ""
+    },
+    {
+      "id": 2,
+      "date": "24/05/2022",
+      "time": "1h",
+      "trainingType": "compétition",
+      "weight": 90
+    },
+    {
+      "id": 3,
+      "date": "2022-03-25",
+      "time": "3h",
+      "trainingType": "marathon",
+      "weight": 70
+    },
+    {
+      "id": 4,
+      "date": "2022-03-31",
+      "time": "2h",
+      "trainingType": "footing",
+      "weight": 85
+    },
+    {
+      "id": 5,
+      "date": "2022-03-30",
+      "time": "1h",
+      "trainingType": "footing",
+      "weight": ""
+    },
+    {
+      "id": 6,
+      "date": "2022-03-31",
+      "time": "thh",
+      "trainingType": "thth",
+      "weight": ""
+    },
+    {
+      "id": 7,
+      "date": "2022-03-24",
+      "time": "1h",
+      "trainingType": "hahahahah ",
+      "weight": ""
+    },
+    {
+      "date": "2022-04-15",
+      "time": "45min",
+      "trainingType": "footing",
+      "weight": 78,
+      "id": 8
+    }
+  ]
+}

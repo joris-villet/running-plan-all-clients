@@ -1,11 +1,12 @@
 <script>
-  import { onMount } from 'svelte';
-  import { navigate } from "svelte-routing";
+// @ts-nocheck
+  // import { onMount } from 'svelte';
+  // import { navigate } from "svelte-routing";
   import RouterView from './lib/RouterView.svelte'
 
-  onMount(() => {
-    navigate('/dashboard')
-  })
+  // onMount(() => {
+  //   navigate('/dashboard')
+  // })
 </script>
 
 <main id="main">
