@@ -1,30 +1,40 @@
 import { writable } from 'svelte/store';
 
-let sidebarActive = writable(true);
 export let styleSidebar = writable("500px 1fr");
 
-// const closeSidebar = () => styleSidebar.set("50px 1fr");
-// const openSidebar = () => styleSidebar.set("500px 1fr");
+// export const closeSidebar = () => styleSidebar.set("50px 1fr");
+// export const openSidebar = () => styleSidebar.set("500px 1fr");
 
-// sidebarActive ? closeSidebar() : openSidebar;
 
-function useSidebar() {
-	
-  if (sidebarActive) {
-    styleSidebar.set("50px 1fr")
-    sidebarActive.set(false)
+// export function useStoreSidebar() {
+
+//   return {
+//     close: () => styleSidebar.set("50px 1fr"),
+//     open: () => styleSidebar.set("500px 1fr"),
+//   }
+
+// }
+
+let active = true;
+
+export function useStoreSidebar() {
+
+  return {
+
+    toggle: () => {
+      if (active) {
+        styleSidebar.set("50px 1fr");
+        active = false;
+      }
+      else {
+        styleSidebar.set("500px 1fr");
+        active = true;
+      }
+    }
   }
-  else {
-    styleSidebar.set("500px 1fr")
-    sidebarActive.set(true)
-  }
-
-	// return {
-	// 	close: () => styleSidebar.set("50px 1fr"),
-  //   open: () => styleSidebar.set("500px 1fr"),
-	// };
+  
 }
 
-export let sidebar = useSidebar();
+
 
 

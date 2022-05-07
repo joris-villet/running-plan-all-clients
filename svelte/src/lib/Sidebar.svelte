@@ -1,25 +1,13 @@
 <script>
-  import { sidebar } from '../store.js';
+  import { useStoreSidebar } from '../store.js';
 
-
-  function handleSidebar() {
-    console.log('click');
-    sidebar
-    // if (sidebarActive) {
-    //   styleSidebar.set("50px 1fr");
-    //   sidebarActive.(false);
-    // }
-    // else {
-    //   styleSidebar.set("500px 1fr")
-    //   sidebarActive.update(false);
-    // }
-  }
+  const useSidebar = useStoreSidebar();
 
 </script>
 
 <aside>
   <span 
-    on:click={handleSidebar}
+    on:click={useSidebar.toggle}
     class="material-icons icon-sidebar"
   >
     arrow_circle_left
