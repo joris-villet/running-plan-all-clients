@@ -1,6 +1,7 @@
 import { writable } from 'svelte/store';
 
 export let styleSidebar = writable("500px 1fr");
+export let currentPath = writable(window.location.pathname);
 
 // export const closeSidebar = () => styleSidebar.set("50px 1fr");
 // export const openSidebar = () => styleSidebar.set("500px 1fr");

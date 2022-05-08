@@ -1,47 +1,34 @@
 <script>
-  import { currentPath } from "../store";
-  import { globalHistory } from 'svelte-routing/src/history';
-  import { onMount, onDestroy } from 'svelte';
-
-  let unsub;
-
-  const checkUrl = () => {
-    unsub = globalHistory.listen(({ location, action }) => {
-      $currentPath = location.pathname;
-    })
-  }
-
-  onMount(() => {
-    checkUrl();
-  })
+ 
 </script>
 
-
-<form class="login__form">
+<form class="signup__form">
   <label>
-    <input
-     
-      type="text" 
-      placeholder="Email" 
-      class="login__form__input" 
+    <input 
+      type="text"
+      placeholder="Email"
+      class="signup__form__input"
     >
   </label>
   <label>
-    <input
-      
-      type="password" 
-      placeholder="Mot de passe" 
-      class="login__form__input" 
+    <input 
+      type="text"
+      placeholder="Mot de passe"
+      class="signup__form__input"
     >
   </label>
-  <button class="login__form__btn">Valider</button>
+  <label>
+    <input 
+      type="text"
+      placeholder="Confirmez le mot de passe"
+      class="signup__form__input"
+    >
+  </label>
+  <button class="signup__form__btn">S'inscrire</button>
 </form>
 
-<h1>The current path is: {$currentPath}</h1>
-
-
 <style>
-  .login__form {
+  .signup__form {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -54,9 +41,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-}
+  }
 
-.login__form__input {
+.signup__form__input {
   border: none;
   display: block;
   width: 300px;
@@ -69,7 +56,7 @@
   color: #2e5755;
 }
 
-.login__form__btn {
+.signup__form__btn {
   width: 310px;
   border: none;
   border-radius: 50px 10px;
