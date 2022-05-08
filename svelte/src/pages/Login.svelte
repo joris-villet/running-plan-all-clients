@@ -37,8 +37,6 @@
   <button class="login__form__btn">Valider</button>
 </form>
 
-<h1>The current path is: {$currentPath}</h1>
-
 
 <style>
   .login__form {

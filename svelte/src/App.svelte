@@ -2,7 +2,7 @@
 // @ts-nocheck
   import { onMount, onDestroy } from 'svelte';
   import { globalHistory } from 'svelte-routing/src/history';
-  import { Router, Link } from "svelte-routing";
+  import { Router, Link, link } from "svelte-routing";
   import RouterView from './lib/RouterView.svelte';
   import { currentPath } from "./store";
   import url from './stores/url';
@@ -35,23 +35,17 @@
 
   <Router>
     {#if $url.pathname == "/login"}
-      <button>
-        <Link to="/signup">S'inscrire</Link>
-      </button>
+      <a href="/signup" use:link>
+        <button class="switch-form">S'inscrire</button>
+      </a>
     {:else if $url.pathname == "/signup"}
-      <button>
-        <Link to="/login">Se connecter</Link>
-      </button>
+      <a href="/login" use:link>
+        <button class="switch-form">Se connecter</button>
+      </a>
     {:else}
-      ""
+      <span></span>
     {/if}
   </Router>
-
-  <!-- {#if $currentPath === "/login"}
-    <Router>
-      <Link to="/signup">S'inscrire</Link>
-    </Router>
-  {/if} -->
 
 </main>
 
@@ -64,6 +58,27 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh; */
+  }
+
+  .switch-form {
+    position: absolute;
+    bottom: 4rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    cursor: pointer;
+    padding: .5rem 2rem;
+    background: none;
+    border: 1px solid rgb(169, 227, 230);
+    border-radius: 50px;
+    color: rgb(169, 227, 230);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: .2s ease-out;
+  }
+  
+  .switch-form:hover {
+    background: rgba(169, 227, 230, 0.205);
   }
 
 </style>
