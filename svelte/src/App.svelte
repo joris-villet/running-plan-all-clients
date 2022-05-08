@@ -1,33 +1,8 @@
 <script>
 // @ts-nocheck
-  import { onMount, onDestroy } from 'svelte';
-  import { globalHistory } from 'svelte-routing/src/history';
-  import { Router, Link, link } from "svelte-routing";
+  import { Router, link } from "svelte-routing";
   import RouterView from './lib/RouterView.svelte';
-  import { currentPath } from "./store";
   import url from './stores/url';
-
-  let unsub;
-  const checkUrl = () => {
-    unsub = globalHistory.listen(({ location, action }) => {
-      $currentPath = location.pathname;
-    })
-  }
-
-  onMount(() => {
-    checkUrl();
-    console.log($url)
-  })
-
-  onDestroy(() => {
-    unsub()
-  })
-  
-  // onMount(() => {
-  //   navigate('/dashboard')
-  // })
-
- 
 </script>
 
 <main id="main">
@@ -74,7 +49,7 @@
     color: rgb(169, 227, 230);
     text-decoration: none;
     font-size: 1.2rem;
-    transition: .2s ease-out;
+    transition: .2s ease;
   }
   
   .switch-form:hover {
