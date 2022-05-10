@@ -5,10 +5,15 @@
   import url from './stores/url';
 </script>
 
+
+<h1 class="title_main">Running Plan</h1>
+
 <main id="main">
   <RouterView />
 
-  <Router>
+  
+
+  <!-- <Router>
     {#if $url.pathname == "/login"}
       <a href="/signup" use:link>
         <button class="switch-form">S'inscrire</button>
@@ -19,6 +24,22 @@
       </a>
     {:else}
       <span></span>
+    {/if}
+  </Router> -->
+  
+  <Router>
+    {#if $url.pathname == "/login"}
+      
+      <a href="/signup" use:link>
+        <button class="switch-form">S'inscrire</button>
+      </a>
+
+    {:else if $url.pathname == "/signup"}
+
+      <a href="/login" use:link>
+        <button class="switch-form">Se connecter</button>
+      </a>
+
     {/if}
   </Router>
 
@@ -54,6 +75,17 @@
   
   .switch-form:hover {
     background: rgba(169, 227, 230, 0.205);
+  }
+
+  .title_main {
+    position: absolute;
+    left: 140px;
+    font-family: 'Gruppo', cursive;
+    background: rgb(34,43,35);
+    background: linear-gradient(103deg, rgba(34,43,35,1) 0%, rgba(251,185,152,1) 99%); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
   }
 
 </style>

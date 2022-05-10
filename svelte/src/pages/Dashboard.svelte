@@ -23,8 +23,8 @@
     /* -moz-transition: .7s cubic-bezier(.45,.67,.9,.73);
     -webkit-transition: .7s cubic-bezier(.45,.67,.9,.73);
     transition: .7s cubic-bezier(.45,.67,.9,.73); */
-    -webkit-transition: .7s ease;
     transition: .7s ease;
+    -webkit-transition: .7s ease;
     /* grid-template-columns: 500px 1fr;  */
   }
 
@@ -43,4 +43,5 @@
     display: flex;
     justify-content: center;
   }
+
 </style>

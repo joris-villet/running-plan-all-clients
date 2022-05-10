@@ -10,23 +10,23 @@
   let events = [];
 
   const getEvents = () => {
-    axios.get('http://localhost:5000/events')
+    axios.get('https://running-plan-strapi.herokuapp.com/api/events')
       .then(({ data }) => {
-        console.log(data);
-        events = events.concat(data);
+        console.log(data.data);
+        events = events.concat(data.data);
       })
       .catch(err => console.log(err))
   }
 
-  onMount(getEvents)
+  // onMount(getEvents)
 
 </script>
 
 {#each events as event}
-  <td class="classTd">{ event.date }</td>
-  <td class="classTd">{ event.time }</td>
-  <td class="classTd">{ event.trainingType }</td>
-  <td class="classTd">{ event.weight === '' ? '/' : event.weight + ' kg' }</td>
+  <td class="classTd">{ event.attributes.date }</td>
+  <td class="classTd">{ event.attributes.time }</td>
+  <td class="classTd">{ event.attributes.trainingType }</td>
+  <td class="classTd">{ event.attributes.weight === '' ? '/' : event.attributes.weight + ' kg' }</td>
   <span class="material-icons icon-edit-event">
     edit
   </span> 
