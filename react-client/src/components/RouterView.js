@@ -5,6 +5,7 @@ import Register from '../pages/Register';
 
 
 export default function RouterView() {
+  console.log(Route)
   return (
     <Routes>
       <Route path="/login" element={<Login />} />
