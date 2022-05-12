@@ -1,7 +1,8 @@
 import './App.css';
 import basket from './assets/basket.png';
-import RouterView from './components/RouterView';
+import RouterView from './components/RouterView.js';
 import { useLocation, Link } from 'react-router-dom';
+import React from 'react';
 
 
 const ButtonSwitchForm = () => {
