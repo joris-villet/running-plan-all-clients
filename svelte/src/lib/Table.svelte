@@ -2,7 +2,8 @@
   import Events from '../lib/Events.svelte'
 </script>
 
-<table class="table">
+
+<!-- <table class="table">
   <thead class="table__thead">
     <tr class="table__row">
       <td class="table__thead__td">Date</td>
@@ -13,29 +14,41 @@
   </thead>
 
   <tbody class="table__tbody">
-     <!-- <tr class="table__row" v-for="event in eventStore.events" :key="event.id">
-      <Events
-        classTd="table__tbody__td"
-        :date="event.date"
-        :time="event.time"
-        :trainingType="event.trainingType"
-        :weight="event.weight === '' ? '/' : event.weight + ' kg'"
-      >
-        <i @click="openModal(event)" class="table__tbody__icon fas fa-edit"></i>
-      </Events>
-    </tr>  -->
     <tr class="table__row">
       <Events />
     </tr> 
-
-    <!-- MODAL EDIT EVENT-->
   </tbody>
-</table>
+</table> -->
+<div class="container">
+  <p>divers icons ici</p>
+  <table class="table">
+    <thead class="table__thead">
+      <tr class="table__row">
+        <td class="table__thead__td">Date</td>
+        <td class="table__thead__td">Temps</td>
+        <td class="table__thead__td">Type d'entrainements</td>
+        <td class="table__thead__td">Poids</td>
+      </tr>
+    </thead>
+  
+    <tbody class="table__tbody">
+      <tr class="table__row">
+        <Events />
+      </tr> 
+  
+      <!-- MODAL EDIT EVENT-->
+    </tbody>
+  </table>
+</div>
 
 <style>
-  .table {
+  .container {
+    margin-top: 5rem; 
     width: 90%;
-    margin-top: 5rem;
+  }
+
+  .table {
+    width: 100%;
     height: -webkit-min-content;
     height: -moz-min-content;
     height: min-content;
@@ -104,4 +117,5 @@
     -webkit-animation: 0.2s ease slideModalUp;
     animation: 0.2s ease slideModalUp;
   } */
+
 </style>

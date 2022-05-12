@@ -3,8 +3,14 @@ aside {
   background: rgba(255, 255, 255, 0.3);
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+<<<<<<< HEAD
   --moz-backdrop-filter: blur(30px);
   --webkit-backdrop-filter: blur(30px);
     backdrop-filter: blur(30px);
+=======
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  margin-top: 5rem;
+>>>>>>> 3e807e4674e5f796d70a06b22a3ad3a60e924150
 }
 /*# sourceMappingURL=index.css.map */
