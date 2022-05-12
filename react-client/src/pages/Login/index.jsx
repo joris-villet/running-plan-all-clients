@@ -2,7 +2,7 @@ import Form from '../../components/Form';
 import Input from '../../components/Input';
 import React, { useState } from 'react';
 import './dist/index.css';
-// import superagent from 'superagent';
+import needle from 'needle';
 
 
 export default function Login () {
@@ -15,10 +15,9 @@ export default function Login () {
     console.log(email)
     console.log(password)
 
-    // superagent
-    //   .get('https://jsonplaceholder.typicode.com/users')
-    //   .then(res => console.log(res))
-    //   .catch(err => console.log(err))
+    needle('get','https://jsonplaceholder.typicode.com/users')
+      .then(({ body }) => console.log(body))
+      .catch(err => console.log(err))
   }
 
   return (
