@@ -23,10 +23,14 @@
     /* -moz-transition: .7s cubic-bezier(.45,.67,.9,.73);
     -webkit-transition: .7s cubic-bezier(.45,.67,.9,.73);
     transition: .7s cubic-bezier(.45,.67,.9,.73); */
-    -webkit-transition: .7s ease;
-    transition: .7s ease;
+    /* transition-duration: .7s; */
     /* grid-template-columns: 500px 1fr;  */
+    transition-duration: 700ms;
+    --o-transition-duration: 700ms;
+    --moz-transition-duration: 700ms;
+    --webkit-transition-duration: 700ms;
   }
+
 
   /* aside {
     position: relative;
