@@ -1,0 +1,93 @@
+.form__register {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form__register__label {
+  margin: .7rem auto;
+}
+
+.form__register__input {
+  border-radius: 50px;
+  border: none;
+  padding: .6rem 0 .6rem 1rem;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #dadada;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.form__register__input:focus {
+  outline: none;
+}
+
+.form__register__input:focus::-webkit-input-placeholder {
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: rgba(133, 133, 133, 0.263);
+  padding-left: 100%;
+}
+
+.form__register__input:focus:-ms-input-placeholder {
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: rgba(133, 133, 133, 0.263);
+  padding-left: 100%;
+}
+
+.form__register__input:focus::-ms-input-placeholder {
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: rgba(133, 133, 133, 0.263);
+  padding-left: 100%;
+}
+
+.form__register__input:focus::placeholder {
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: rgba(133, 133, 133, 0.263);
+  padding-left: 100%;
+}
+
+.form__register__input::-webkit-input-placeholder {
+  color: #c5c5c5;
+}
+
+.form__register__input:-ms-input-placeholder {
+  color: #c5c5c5;
+}
+
+.form__register__input::-ms-input-placeholder {
+  color: #c5c5c5;
+}
+
+.form__register__input::placeholder {
+  color: #c5c5c5;
+}
+
+.form__register__button {
+  margin: 1rem auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff2e), to(#c6c6c62e));
+  background: linear-gradient(180deg, #ffffff2e 0%, #c6c6c62e 100%);
+  border: none;
+  border-radius: 50px;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  color: #dadada;
+  border-radius: 30px 10px 30px 10px;
+  border: 2px solid #b9d4ff;
+  font-size: 1.1rem;
+}
+/*# sourceMappingURL=index.css.map */

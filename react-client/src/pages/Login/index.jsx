@@ -15,7 +15,10 @@ export default function Login () {
     console.log(email)
     console.log(password)
 
-    needle('get','https://jsonplaceholder.typicode.com/users')
+    needle('post','https://running-plan-strapi.herokuapp.com/auth/local', {
+      identifier: email,
+      password: password
+    })
       .then(({ body }) => console.log(body))
       .catch(err => console.log(err))
   }

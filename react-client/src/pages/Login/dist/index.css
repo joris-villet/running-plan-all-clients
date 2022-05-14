@@ -16,7 +16,6 @@
   width: 300px;
   background: rgba(255,255,255,0.2);
   color: #dadada;
-  font-weight: bold;
   font-style: italic;
   font-size: 1rem;
 }
@@ -30,7 +29,6 @@
 }
 .form__login__input::placeholder {
   color: #c5c5c5;
-  font-weight: bold;
 }
 .form__login__button {
   margin: 1rem auto;
@@ -41,8 +39,7 @@
   height: 40px;
   cursor: pointer;
   color: #dadada;
-  font-weight: bold;
   border-radius: 30px 10px 30px 10px;
   border: 2px solid #b9d4ff;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
